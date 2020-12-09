@@ -1,0 +1,50 @@
+
+
+-- CREATE TABLE IF NOT EXISTS store_items (
+--     id INT NOT NULL AUTO_INCREMENT,
+--     name VARCHAR(255) NOT NULL,
+--     artist_name VARCHAR(255) NOT NULL,
+--     description TEXT NOT NULL,
+--     price DECIMAL(7,2) NOT NULL,
+--     quantity INT NOT NULL,
+--     cover_image TEXT NOT NULL,
+--     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+--     PRIMARY KEY (id)
+-- );
+
+
+
+-- CREATE TABLE IF NOT EXISTS store_shopper_track(
+--     id INT AUTO_INCREMENT,
+--     session_id VARCHAR(32) NOT NULL,
+--     sel_item_qty SMALLINT NOT NULL,
+--     sel_item_color VARCHAR(25),
+--     sel_item_size VARCHAR(25),
+--     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+--     PRIMARY KEY(id)
+-- );
+
+-- CREATE TABLE IF NOT EXISTS store_orders(
+--     id INT AUTO_INCREMENT,
+--     order_date DATETIME NOT NULL,
+--     order_name VARCHAR(255) NOT NULL,
+--     order_address VARCHAR(255) NOT NULL,
+--     order_city VARCHAR(255) NOT NULL,
+--     order_state VARCHAR(255) NOT NULL,
+--     order_zip VARCHAR(255) NOT NULL,
+--     order_tel VARCHAR(25),
+--     order_email VARCHAR(255),
+--     item_total DECIMAL(8,2),
+--     PRIMARY KEY(id)
+-- );
+
+-- CREATE TABLE IF NOT EXISTS store_order_items(
+--     id INT AUTO_INCREMENT,
+--     order_id INT NOT NULL,
+--     sel_item_id INT NOT NULL,
+--     sel_item_qty SMALLINT NOT NULL,
+--     sel_item_size VARCHAR(25),
+--     sel_item_color VARCHAR(25),
+--     sel_item_price DECIMAL(8,2) NOT NULL,
+--     PRIMARY KEY(id)
+-- );
